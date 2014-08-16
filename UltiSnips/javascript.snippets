@@ -1,15 +1,49 @@
-snippet prom "new Promise"
+snippet prom "new Promise" w
 new Promise(function(resolve, reject) {
-	${VISUAL}${0}
-});
+	${VISUAL}$1
+})$0
 endsnippet
-snippet }).th "Promise.then call"
-}).then(function(${1:result}) {
-	${VISUAL}${0}
-});
+
+snippet th "Promise.then call" w
+then(function($1) {
+	${VISUAL}$2
+})
+$0
 endsnippet
-snippet }).ca "Promise.catch call"
-}).catch(function(${1:result}) {
-	${VISUAL}${0}
-});
+
+snippet cat "Promise.catch call" w
+catch(function(${1:err}) {
+	${VISUAL}$2
+})
+$0
+endsnippet
+
+snippet fun "function name(args)" w
+function $1($2) {
+	${VISUAL}$3
+}
+$0
+endsnippet
+
+snippet f "function(args)" w
+function($1) {
+	${VISUAL}$2
+}$0
+endsnippet
+
+snippet if "if (stuff) { /* stuff */ }"
+if ($1) {
+	${VISUAL}$2
+}
+$0
+endsnippet
+
+snippet ife "if (stuff) { /* stuff */ } else { /* stuff */ }"
+if ($1) {
+	${VISUAL}$2
+}
+else ($3) {
+	${VISUAL}$4
+}
+$0
 endsnippet
