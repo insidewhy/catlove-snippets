@@ -1,11 +1,11 @@
 snippet prom "new Promise" w
-new Promise(function(resolve, reject) {
+new Promise((resolve, reject) => {
 	${VISUAL}$1
 })$0
 endsnippet
 
 snippet th "Promise.then call" w
-then(function($1) {
+then($1 => {
 	${VISUAL}$2
 })
 $0
@@ -26,7 +26,7 @@ $0
 endsnippet
 
 snippet fu "function(args)" w
-function($1) {
+($1) => {
 	${VISUAL}$2
 }$0
 endsnippet
@@ -46,4 +46,8 @@ else ($3) {
 	${VISUAL}$4
 }
 $0
+endsnippet
+
+snippet pp "pretty print" w
+JSON.stringify($1, null, 2)
 endsnippet
