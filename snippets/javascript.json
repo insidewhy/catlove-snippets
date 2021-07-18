@@ -285,11 +285,11 @@
   },
   "const object": {
     "prefix": "co",
-    "body": "const ${1:name} = {\n\t${0}\n}"
+    "body": "const ${1:name} = {\n\t${2}\n}$0"
   },
   "const array": {
     "prefix": "car",
-    "body": "const ${1:name} = [\n\t${0}\n]"
+    "body": "const ${1:name} = [\n\t${2}\n]$0"
   },
   "generate array of integers starting with 1": {
     "prefix": "gari",
@@ -365,7 +365,7 @@
   },
   "else statement": {
     "prefix": "el",
-    "body": "else {\n\t${0}\n}"
+    "body": "else {\n\t${1}\n}$0"
   },
   "if/else statement": {
     "prefix": "ife",
